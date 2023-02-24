@@ -28,8 +28,8 @@ function Addtodo() {
   }
   saveInfo(todoArray);
   todotext.value = "";
-    edit_id = null;
-    todobutton.innerText = buttonName;
+  edit_id = null;
+  todobutton.innerText = buttonName;
 
 }
 
@@ -66,7 +66,6 @@ function deleteInfo(index) {
 function editInfo(index) {
     todotext.value = todoArray[index].text;
     todobutton.innerText = 'Save Changes'
-    todobutton.style.backgroundColor = 'skyblue'
     edit_id = index;
 }
 
